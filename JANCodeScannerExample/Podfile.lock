@@ -1,0 +1,16 @@
+PODS:
+  - JANCodeScanner (1.0.0)
+
+DEPENDENCIES:
+  - JANCodeScanner (from `../JANCodeScanner/`)
+
+EXTERNAL SOURCES:
+  JANCodeScanner:
+    :path: "../JANCodeScanner/"
+
+SPEC CHECKSUMS:
+  JANCodeScanner: 77f37baa6ac6da3bcb8653fc5b107be6265c6a53
+
+PODFILE CHECKSUM: df4d5b45cb03a91e9bf05dbe9fcbdc60aca9c664
+
+COCOAPODS: 1.10.0

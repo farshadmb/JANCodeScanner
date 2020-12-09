@@ -1,0 +1,6 @@
+framework module JANCodeScanner {
+  umbrella header "JANCodeScanner-umbrella.h"
+
+  export *
+  module * { export * }
+}
