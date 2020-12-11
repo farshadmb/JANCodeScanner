@@ -10,7 +10,7 @@ public class ScannerView: UIView , AVCaptureMetadataOutputObjectsDelegate {
     fileprivate var captureSession: AVCaptureSession!
     fileprivate var previewLayer: AVCaptureVideoPreviewLayer!
     var stopAfterScan = true
-    weak var scannerViewDelegate : scannerViewProtocol?
+    public weak var scannerViewDelegate : scannerViewProtocol?
     
     public override func awakeFromNib() {
         super.awakeFromNib()
@@ -138,7 +138,7 @@ public class ScannerView: UIView , AVCaptureMetadataOutputObjectsDelegate {
     }
 }
 
-protocol scannerViewProtocol : NSObjectProtocol {
+public protocol scannerViewProtocol : NSObjectProtocol {
     func scanResult(_ text : String)
     func scanFailed()
 }
