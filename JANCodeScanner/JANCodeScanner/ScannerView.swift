@@ -5,14 +5,14 @@
 import UIKit
 import AVFoundation
 
-final class ScannerView: UIView , AVCaptureMetadataOutputObjectsDelegate {
+public class ScannerView: UIView , AVCaptureMetadataOutputObjectsDelegate {
     
     fileprivate var captureSession: AVCaptureSession!
     fileprivate var previewLayer: AVCaptureVideoPreviewLayer!
     var stopAfterScan = true
     weak var scannerViewDelegate : scannerViewProtocol?
     
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
         self.initCamera()
     }
@@ -99,7 +99,7 @@ final class ScannerView: UIView , AVCaptureMetadataOutputObjectsDelegate {
 
     
     /// found BarCode
-    internal func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
+    public func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         
         if let metadataObject = metadataObjects.first {
             guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }
