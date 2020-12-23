@@ -11,6 +11,6 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "9.0"
   spec.swift_version = "5.0"
   spec.source       = { :git => "https://github.com/saeedCodium/JANCodeScanner.git", :tag => "1.0.3" }
-  spec.source_files  = "JANCodeScanner/**/*.{h,m, swift}"
+  spec.source_files  = "JANCodeScanner/**/*.{h,m,swift}"
   
 end
